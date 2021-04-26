@@ -48,5 +48,11 @@ The following dependencies were imported:
 * import os
 * from g_api_keys import g_key
 
-The previous csv file was imported and 
+The previous csv file was imported and gmaps was then configured. A heat map regarding humidity was created using gmaps. Three conditions were added to the data, and only the cities that fit these conditions were kept: 
+- A max temperature lower than 80 degrees but higher than 70
+- Wind speed less than 10 mph.
+- Zero cloudiness
+
+Once the data was filtered by these conditions, the hotels that were closet to each of these cities were found and entered into the data frame. These hotels were then added to the previously made heatmap as markers.
+
 
